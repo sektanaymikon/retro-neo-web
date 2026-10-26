@@ -4,8 +4,11 @@ Spamton NEO Retro Recreation by Lily Garcia / CherrySodaPop.
 Original: https://cherrysodapop.itch.io/spamton-neo-retro-recreation
 Source: https://github.com/CherrySodaPop/Spamton-NEO-VGB/tree/a63d0c72aaf89dd933008cae120c96ada38d545c
 The complete upstream source and resources are included in original-source.zip.
-Game license: GPL-3.0 (LICENSE.txt). Game data and Godot runtime are unchanged
+Game license: GPL-3.0 (LICENSE.txt). Game data and audio are unchanged
 from the author's published browser build at itch.io HTML upload 4921405.
+The Godot JavaScript runtime has one input compatibility change: keydown
+and keyup listeners attach to window instead of only the canvas, so lost
+canvas focus cannot swallow keyboard input. Runtime source: index.js.
 Godot engine: https://godotengine.org/license/ (MIT license).
 Characters and original DELTARUNE music belong to their respective creators.
 
